@@ -1,0 +1,23 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "read_file|write_file|edit_file|create_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ./projects/hooks_demo/read_env_hook.js"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "read_file",
+      "write_file",
+      "list_directory"
+    ],
+    "deny": []
+  }
+}
