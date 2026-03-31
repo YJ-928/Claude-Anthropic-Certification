@@ -1,0 +1,22 @@
+[
+  {"id": 1,  "input": "The new iPhone is fantastic! Best upgrade I've ever made.",       "expected": "positive", "task": "sentiment"},
+  {"id": 2,  "input": "I'm so disappointed with this product. Total waste of money.",     "expected": "negative", "task": "sentiment"},
+  {"id": 3,  "input": "The package arrived on time. Seems okay so far.",                  "expected": "neutral",  "task": "sentiment"},
+  {"id": 4,  "input": "Absolutely loved the service. Will recommend to everyone!",        "expected": "positive", "task": "sentiment"},
+  {"id": 5,  "input": "Terrible experience from start to finish. Never again.",           "expected": "negative", "task": "sentiment"},
+  {"id": 6,  "input": "It works as described. Nothing special.",                          "expected": "neutral",  "task": "sentiment"},
+  {"id": 7,  "input": "Exceeded all my expectations. Five stars all the way.",            "expected": "positive", "task": "sentiment"},
+  {"id": 8,  "input": "Broken on arrival. Customer support was rude.",                    "expected": "negative", "task": "sentiment"},
+  {"id": 9,  "input": "Average quality. Price seems fair.",                               "expected": "neutral",  "task": "sentiment"},
+  {"id": 10, "input": "I've been using this for 3 months and still love it every day.",  "expected": "positive", "task": "sentiment"},
+  {"id": 11, "input": "Extract: 'Order #4521 for Alice Brown (alice@email.com) shipped to 12 Oak St, Denver on 2024-03-15.'", "expected": {"order_id": "4521", "customer": "Alice Brown", "email": "alice@email.com", "address": "12 Oak St, Denver", "date": "2024-03-15"}, "task": "extraction"},
+  {"id": 12, "input": "Extract: 'Invoice INV-009 — Bob Smith (bob@corp.com), 500 Main Ave, Chicago, 2024-01-20.'",          "expected": {"order_id": "INV-009", "customer": "Bob Smith", "email": "bob@corp.com", "address": "500 Main Ave, Chicago", "date": "2024-01-20"}, "task": "extraction"},
+  {"id": 13, "input": "What is the capital of Germany?",  "expected": "Berlin",  "task": "factual_qa"},
+  {"id": 14, "input": "What is the speed of light?",      "expected": "approximately 3 × 10^8 m/s or 299,792,458 m/s", "task": "factual_qa"},
+  {"id": 15, "input": "Who wrote 'Pride and Prejudice'?", "expected": "Jane Austen", "task": "factual_qa"},
+  {"id": 16, "input": "Summarize in one sentence: 'Python is a high-level programming language known for readability and simplicity. It supports multiple paradigms including OOP and functional programming.'", "expected": "Python is a readable, high-level language that supports multiple programming paradigms.", "task": "summarization"},
+  {"id": 17, "input": "Summarize in one sentence: 'The Eiffel Tower was built between 1887 and 1889 as the entrance arch for the 1889 World's Fair. It stands 330 metres tall and is the most visited monument in the world.'", "expected": "The Eiffel Tower, built in 1889 as a World's Fair arch, is 330m tall and the world's most visited monument.", "task": "summarization"},
+  {"id": 18, "input": "Translate to French: 'Good morning, how are you?'", "expected": "Bonjour, comment allez-vous ?", "task": "translation"},
+  {"id": 19, "input": "Translate to Spanish: 'The weather is beautiful today.'", "expected": "El tiempo es hermoso hoy.", "task": "translation"},
+  {"id": 20, "input": "Classify the topic: 'The central bank raised interest rates by 0.25% to combat inflation.'", "expected": "economics/finance", "task": "classification"}
+]
