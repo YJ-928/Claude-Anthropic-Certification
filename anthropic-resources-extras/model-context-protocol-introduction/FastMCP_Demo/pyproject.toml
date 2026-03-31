@@ -1,0 +1,9 @@
+[project]
+name = "fastmcp-demo"
+version = "0.1.0"
+description = "FastMCP demo bot — no API key required. Demonstrates MCP tools, resources, and prompts with a rule-based mock LLM instead of Claude."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.8.0",
+]
